@@ -24,7 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootswatch/dist/journal/boostrap.min.css"
+              "node_modules/bootswatch/dist/journal/bootstrap.min.css"
 
             ],
             "scripts": []

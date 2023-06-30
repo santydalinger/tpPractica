@@ -1,0 +1,10 @@
+.estilo{
+    display:flex;
+    box-sizing: border-box;
+    
+}
+.separacion{
+    display: flex;
+    padding: 0 50px;
+    width: 50%;
+}
