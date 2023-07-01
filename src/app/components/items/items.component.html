@@ -1,18 +1,10 @@
 <div class="container">
   <div >
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="sep" scope="col mb-4">#</th>
-          <th class="sep" scope="col">producto</th>
-          <th class="sep" scope="col">precio</th>
-          <th class="sep" scope="col">cantidad</th>
-        </tr>
-    </thead> 
+    <table class="table"> 
       <tbody>
 
-        
-          <app-item *ngFor="let item of items " [item]="item">
+        <app-total mensaje="Total a pagar es: " [total]="total"></app-total>
+          <app-item *ngFor="let item of items " [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="$event">
 
           </app-item>
         
