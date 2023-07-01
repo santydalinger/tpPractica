@@ -4,7 +4,7 @@
       <tbody>
 
         <app-total mensaje="Total a pagar es: " [total]="total"></app-total>
-          <app-item *ngFor="let item of items " [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="$event">
+          <app-item *ngFor="let item of items " [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="toggleItem($event)">
 
           </app-item>
         

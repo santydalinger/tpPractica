@@ -1,10 +1,10 @@
 
 <tr class="estilo">
     <th class="separacion"  scope="row">{{item.id}}</th>
-    <input class="separacion" type="checkbox" [checked]="item.completed">
+    <input class="separacion" type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
     <td class="separacion" >{{item.title }}</td>
     <td class="separacion" >{{item.price |currency}}</td>
     <td class="separacion" >{{item.quantity}}</td>
     <td class="separacion" >{{(item.price * item.quantity)}}</td>
-    <button >Eliminar</button>
+    <button (click)="onDelete(item)" >Eliminar</button>
 </tr>
